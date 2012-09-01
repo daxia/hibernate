@@ -8,31 +8,31 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class StudentTest {
-	
 	private static SessionFactory sf;
+	
 	@BeforeClass
-	public static void beforeClass() {
+	public static void beforeClass(){
 		sf = new Configuration().configure().buildSessionFactory();
 	}
 	
+	//测试session的save方法
 	@Test
-	public void testStudentSave(){
-		StudentPK pk = new StudentPK();
-		pk.setId(1);  
-		pk.setName("wang");
+	public void testSave(){
+		Student stu = new Student();
+		stu.setAge(55);
+		stu.setName("zhang");
 		
-		Student student = new Student();
-		student.setPk(pk);
-		student.setAge(1);
-		
-		//操作hibernate
-		Session session = sf.openSession();
-		session.beginTransaction();
-		session.save(student);
-		session.getTransaction().commit();
-		session.close();
+		Session s = sf.getCurrentSession();
+		s.beginTransaction();
+		s.save(stu);
+		s.getTransaction().commit();
 	}
-
+	
+	//测试session的update
+	@Test
+	public void testUpdate(){
+		
+	}
 	@AfterClass
 	public static void afterClass(){
 		sf.close();

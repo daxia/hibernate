@@ -5,7 +5,7 @@ import java.io.Serializable;
 //联合主键：id，name
 //需要实现Serializable
 //需要重写equals和hashCode方法
-public class StudentPK implements Serializable{
+public class Student2PK implements Serializable{
 	private int id;
 	private String name;
 	
@@ -24,8 +24,8 @@ public class StudentPK implements Serializable{
 	
 	@Override
 	public boolean equals(Object o){
-		if(o instanceof StudentPK){
-			StudentPK pk = (StudentPK) o;
+		if(o instanceof Student2PK){
+			Student2PK pk = (Student2PK) o;
 			if(this.id == pk.getId() && this.name.equals(pk.getName())){
 				return true;
 			}

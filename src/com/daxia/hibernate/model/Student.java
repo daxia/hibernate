@@ -1,17 +1,23 @@
 package com.daxia.hibernate.model;
 
 public class Student {
-	//联合主键，pk是Student一部分
-	private StudentPK pk;
+
+	private int id;
+	private String name;
 	private int age;
 	
-	public StudentPK getPk() {
-		return pk;
+	public int getId() {
+		return id;
 	}
-	public void setPk(StudentPK pk) {
-		this.pk = pk;
+	public void setId(int id) {
+		this.id = id;
 	}
-	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public int getAge() {
 		return age;
 	}

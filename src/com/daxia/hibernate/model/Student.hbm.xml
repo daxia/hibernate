@@ -4,12 +4,11 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.daxia.hibernate.model">
-	<class name="Student">
-		<!-- 联合主键 -->
-		<composite-id name="pk" class="com.daxia.hibernate.model.StudentPK">
-			<key-property name="id" type="java.lang.Integer"></key-property>
-			<key-property name="name" type="java.lang.String"></key-property>
-		</composite-id>
-		<property name="age"></property>
+	<class name="Student" table="student">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="java.lang.String"></property>
+		<property name="age" type="java.lang.Integer"></property>
 	</class>
 </hibernate-mapping>

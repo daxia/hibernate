@@ -2,12 +2,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.daxia.hibernate.model.Student;
+import com.daxia.hibernate.model.Student2;
 
 
 public class StudentTest {
 	public static void main(String[] args){
-		Student student = new Student();
+		Student2 student = new Student2();
 		//student.setId(1);
 		//student.setName("wang");
 		//student.setAge(1);

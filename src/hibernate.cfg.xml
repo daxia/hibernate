@@ -30,10 +30,12 @@
 		<property name="format_sql">true</property>
 
 		<!-- Drop and re-create the database schema on startup（是否自动生成建表语句） -->
-		<property name="hbm2ddl.auto">update</property>
+		<!-- <property name="hbm2ddl.auto">update</property> -->
 
-		<mapping resource="com/daxia/hibernate/model/Student.hbm.xml" />
-		<mapping class="com.daxia.hibernate.model.Teacher"/>
+		<!-- <mapping resource="com/daxia/hibernate/model/Student.hbm.xml" /> -->
+		<!-- <mapping class="com.daxia.hibernate.model.Teacher" /> -->
+		<mapping class="com.daxia.hibernate.model.Husband"/>
+		<mapping class="com.daxia.hibernate.model.Wife"/>
 
 	</session-factory>
 

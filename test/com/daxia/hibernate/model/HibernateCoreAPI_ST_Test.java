@@ -10,7 +10,11 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class HibernateCoreAPITest {
+/*
+ * test Student And Teacher Class  
+ * about the methods of Session Class
+ */
+public class HibernateCoreAPI_ST_Test {
 	private static SessionFactory sf;  //代表与数据库的链接
 	@BeforeClass
 	public static void beforeClass(){

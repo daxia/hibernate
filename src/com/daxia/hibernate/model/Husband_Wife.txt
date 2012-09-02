@@ -1,0 +1,4 @@
+Husband.java
+Wife.java
+
+两者是双向关联

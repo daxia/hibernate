@@ -3,12 +3,25 @@ package com.daxia.hibernate.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
+/*
+ * one-to-one
+ */
 @Entity
 public class Wife {
 	private int id;
 	private String name;
+	private Husband hus;
+	
+	@OneToOne(mappedBy="wife")
+	public Husband getHus() {
+		return hus;
+	}
 
+	public void setHus(Husband hus) {
+		this.hus = hus;
+	}
 	@Id
 	@GeneratedValue
 	public int getId() {
@@ -26,4 +39,6 @@ public class Wife {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	
 }

@@ -34,9 +34,10 @@
 
 		<!-- <mapping resource="com/daxia/hibernate/model/Student.hbm.xml" /> -->
 		<!-- <mapping class="com.daxia.hibernate.model.Teacher" /> -->
+		<!-- <mapping resource="com/daxia/hibernate/model/StudentCard.hbm.xml"/> -->
 		<mapping class="com.daxia.hibernate.model.Husband"/>
 		<mapping class="com.daxia.hibernate.model.Wife"/>
-
+		
 	</session-factory>
 
 </hibernate-configuration>

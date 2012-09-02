@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.daxia.hibernate.model">
+	<class name="StudentCard" table="studentcard">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="number" type="java.lang.Integer"></property>
+		<!-- studentCard 对 student many-to-one 是多对一，而unique又设置为唯一，即studentCard必须设置为唯一-->
+		<many-to-one name="student" column="studentId" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>

@@ -3,8 +3,12 @@ package com.daxia.hibernate.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+/*
+ * one-to-one
+ */
 @Entity
 public class Husband {
 	private int id;
@@ -12,6 +16,7 @@ public class Husband {
 	private Wife wife;
 
 	@OneToOne
+	@JoinColumn(name="wifeId") //设置外键
 	public Wife getWife() {
 		return wife;
 	}

@@ -1,5 +1,6 @@
 package com.daxia.hibernate.model;
 
+
 public class Student {
 
 	private int id;

@@ -1,5 +1,6 @@
 package com.daxia.hibernate.model;
 
+import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
@@ -19,7 +20,7 @@ public class HibernateCoreAPI_HW_Test {
 
 	@Test
 	public void testSchemaExport() {
-		new SchemaExport(new Configuration().configure()).create(false, true);
+		new SchemaExport(new AnnotationConfiguration().configure()).create(false, true);
 	}
 
 	/*

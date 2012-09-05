@@ -1,7 +1,8 @@
 package com.daxia.hibernate.model;
 
-import javax.persistence.Id;
-
+/*
+ * 联合主键
+ */
 public class Student2 {
 	//联合主键，pk是Student一部分
 	private Student2PK pk;

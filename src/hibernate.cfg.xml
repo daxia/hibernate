@@ -32,12 +32,28 @@
 		<!-- Drop and re-create the database schema on startup（是否自动生成建表语句） -->
 		<!-- <property name="hbm2ddl.auto">update</property> -->
 
+		<!-- mapping -->
 		<!-- <mapping resource="com/daxia/hibernate/model/Student.hbm.xml" /> -->
 		<!-- <mapping class="com.daxia.hibernate.model.Teacher" /> -->
 		<!-- <mapping resource="com/daxia/hibernate/model/StudentCard.hbm.xml"/> -->
-		<mapping class="com.daxia.hibernate.model.Husband"/>
-		<mapping class="com.daxia.hibernate.model.Wife"/>
 		
+		<!-- <mapping class="com.daxia.hibernate.model.Husband"/> -->
+		<!-- <mapping class="com.daxia.hibernate.model.Wife"/> -->
+		
+		<!-- <mapping class="com.daxia.hibernate.model2.Developer"/>
+		<mapping class="com.daxia.hibernate.model2.Language"/> -->
+		
+		<!-- <mapping class="com.daxia.hibernate.model2.Group"/>
+		<mapping class="com.daxia.hibernate.model2.User"/> -->
+		
+		<!-- <mapping class="com.daxia.hibernate.model2.Group2"/>
+		<mapping class="com.daxia.hibernate.model2.User2"/> -->
+		
+		<!-- <mapping class="com.daxia.hibernate.model2.Teacher"/>
+		<mapping class="com.daxia.hibernate.model2.Student"/> -->
+		
+		<mapping class="com.daxia.hibernate.model3.Group"/>
+		<mapping class="com.daxia.hibernate.model3.User"/> 
 	</session-factory>
 
 </hibernate-configuration>

@@ -1,6 +1,8 @@
 package com.daxia.hibernate.model;
 
-
+/*
+ * 使用配置Student.hbm.xml
+ */
 public class Student {
 
 	private int id;

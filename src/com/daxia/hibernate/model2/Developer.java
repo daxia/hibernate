@@ -1,13 +1,32 @@
-package com.daxia.hibernate.model;
+package com.daxia.hibernate.model2;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/*
+ * 组件映射
+ */
+@Entity
 public class Developer {
 
 	private int id;
 	private String name;
 	private int age;
-	private String programLanuage; //使用开发语言
 	private String nationality;
 	
+	private Language lanuage; //使用开发语言
+	@Embedded
+	public Language getLanuage() {
+		return lanuage;
+	}
+	public void setLanuage(Language lanuage) {
+		this.lanuage = lanuage;
+	}
+	
+	@Id
+	@GeneratedValue
 	public int getId() {
 		return id;
 	}
@@ -26,12 +45,8 @@ public class Developer {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getProgramLanuage() {
-		return programLanuage;
-	}
-	public void setProgramLanuage(String programLanuage) {
-		this.programLanuage = programLanuage;
-	}
+	
+	
 	public String getNationality() {
 		return nationality;
 	}

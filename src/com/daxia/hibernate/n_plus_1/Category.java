@@ -1,4 +1,4 @@
-package com.daxia.hibernate.hql;
+package com.daxia.hibernate.n_plus_1;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +9,7 @@ import javax.persistence.Table;
  * hql 
  */
 @Entity
-@Table(name="category")
+@Table(name="bbs_category")
 public class Category {
 	private int id;
 	private String name;

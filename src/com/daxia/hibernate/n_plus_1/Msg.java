@@ -1,4 +1,4 @@
-package com.daxia.hibernate.hql;
+package com.daxia.hibernate.n_plus_1;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -8,7 +8,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="msg")
+@Table(name="bbs_msg")
 public class Msg {
 	private int id;
 	private String cont;

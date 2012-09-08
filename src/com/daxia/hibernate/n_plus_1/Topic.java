@@ -1,4 +1,4 @@
-package com.daxia.hibernate.hql;
+package com.daxia.hibernate.n_plus_1;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,14 +14,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="topic")
+@Table(name="bbs_topic")
 public class Topic {
 
 	private int id;
-	private String name;
+	private String title;
 	private Category category;
 	private List<Msg> msgs = new ArrayList<Msg>();
-	
 	//获取整个帖子
 	@OneToMany(mappedBy="topic")
 	public List<Msg> getMsgs() {
@@ -32,7 +31,8 @@ public class Topic {
 	}
 	private Date createDate;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
+	
+	@ManyToOne//(fetch=FetchType.LAZY)
 	public Category getCategory() {
 		return category;
 	}
@@ -54,10 +54,10 @@ public class Topic {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getTitle() {
+		return title;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 }

@@ -61,10 +61,10 @@
 		<mapping class="com.daxia.hibernate.student.Student"/>
 		<mapping class="com.daxia.hibernate.student.Score"/> -->
 		
-		<mapping class="com.daxia.hibernate.hql.Category"/>
-		<mapping class="com.daxia.hibernate.hql.Msg"/>
-		<mapping class="com.daxia.hibernate.hql.MsgInfo"/>
-		<mapping class="com.daxia.hibernate.hql.Topic"/>
+		<mapping class="com.daxia.hibernate.n_plus_1.Category"/>
+		<mapping class="com.daxia.hibernate.n_plus_1.Msg"/>
+		<mapping class="com.daxia.hibernate.n_plus_1.MsgInfo"/>
+		<mapping class="com.daxia.hibernate.n_plus_1.Topic"/>
 	</session-factory>
 
 </hibernate-configuration>

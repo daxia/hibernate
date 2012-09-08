@@ -52,8 +52,19 @@
 		<!-- <mapping class="com.daxia.hibernate.model2.Teacher"/>
 		<mapping class="com.daxia.hibernate.model2.Student"/> -->
 		
-		<mapping class="com.daxia.hibernate.model3.Group"/>
-		<mapping class="com.daxia.hibernate.model3.User"/> 
+		<!-- <mapping class="com.daxia.hibernate.model3.Group"/>
+		<mapping class="com.daxia.hibernate.model3.User"/> --> 
+		
+		<!-- <mapping class="com.daxia.hibernate.tree.Org"/> -->
+		
+		<!-- <mapping class="com.daxia.hibernate.student.Course"/>
+		<mapping class="com.daxia.hibernate.student.Student"/>
+		<mapping class="com.daxia.hibernate.student.Score"/> -->
+		
+		<mapping class="com.daxia.hibernate.hql.Category"/>
+		<mapping class="com.daxia.hibernate.hql.Msg"/>
+		<mapping class="com.daxia.hibernate.hql.MsgInfo"/>
+		<mapping class="com.daxia.hibernate.hql.Topic"/>
 	</session-factory>
 
 </hibernate-configuration>
